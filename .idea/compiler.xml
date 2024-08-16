@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cache2k-testsuite" />
+        <module name="cache2k-config" />
+        <module name="cache2k-pinpoint" />
+        <module name="cache2k-schema" />
+        <module name="test-init" />
+        <module name="cache2k-addon" />
+        <module name="cache2k-core" />
+        <module name="cache2k-testing" />
+        <module name="cache2k-spring" />
+        <module name="build-config" />
+        <module name="cache2k-jcache-tests" />
+        <module name="cache2k-jmx" />
+        <module name="cache2k-micrometer" />
+        <module name="cache2k-api" />
+        <module name="cache2k-jcache" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,132 @@
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  private @Nullable Duration minRetryInterval = Duration.ZERO;
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  private @Nullable Duration retryInterval = null;
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  private @Nullable Duration maxRetryInterval = null;
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  private @Nullable Duration resilienceDuration = null;
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  public @Nullable Duration getRetryInterval() {
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  public void setRetryInterval(@Nullable Duration v) {
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  public @Nullable Duration getMaxRetryInterval() {
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  public void setMaxRetryInterval(@Nullable Duration v) {
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  public @Nullable Duration getResilienceDuration() {
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  public void setResilienceDuration(@Nullable Duration v) {
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  public @Nullable Duration getMinRetryInterval() {
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceConfig.java:  public void setMinRetryInterval(@Nullable Duration minRetryInterval) {
+cache2k-addon/src/main/java/org/cache2k/addon/UniversalResilienceSupplier.java:  private static long toMillis(@Nullable Duration d) {
+cache2k-addon/src/test/java/org/cache2k/addon/UniversalResiliencePolicyTest.java:  @Nullable Cache<Integer, Integer> cache;
+cache2k-addon/src/test/java/org/cache2k/addon/UniversalResiliencePolicyTest.java:  @Nullable UniversalResiliencePolicy<?, ?> policy;
+cache2k-addon/src/test/java/org/cache2k/addon/UniversalResiliencePolicyUnitTest.java:    public @Nullable LoadExceptionInfo getExceptionInfo() {
+cache2k-addon/src/test/java/org/cache2k/addon/UniversalResiliencePolicyUnitTest.java:  private static @Nullable UniversalResiliencePolicy policy(Cache2kBuilder builder) {
+cache2k-api/src/main/java/org/cache2k/AbstractCache.java:  public @Nullable V get(K key) {
+cache2k-api/src/main/java/org/cache2k/Cache.java:  @Nullable V get(K key);
+cache2k-api/src/main/java/org/cache2k/Cache.java:  @Nullable CacheEntry<K, V> getEntry(K key);
+cache2k-api/src/main/java/org/cache2k/Cache.java:  @Nullable V peek(K key);
+cache2k-api/src/main/java/org/cache2k/Cache.java:  @Nullable CacheEntry<K, V> peekEntry(K key);
+cache2k-api/src/main/java/org/cache2k/Cache.java:  @Nullable V peekAndRemove(K key);
+cache2k-api/src/main/java/org/cache2k/Cache.java:  @Nullable V peekAndPut(K key, V value);
+cache2k-api/src/main/java/org/cache2k/Cache.java:  <R> @Nullable R invoke(K key, EntryProcessor<K, V, R> processor);
+cache2k-api/src/main/java/org/cache2k/Cache2kBuilder.java:  private @Nullable CacheType<K> keyType;
+cache2k-api/src/main/java/org/cache2k/Cache2kBuilder.java:  private @Nullable CacheType<V> valueType;
+cache2k-api/src/main/java/org/cache2k/Cache2kBuilder.java:  private @Nullable Cache2kConfig<K, V> config = null;
+cache2k-api/src/main/java/org/cache2k/Cache2kBuilder.java:  private @Nullable CacheManager manager = null;
+cache2k-api/src/main/java/org/cache2k/Cache2kBuilder.java:  private Cache2kBuilder(@Nullable CacheType<K> keyType, @Nullable CacheType<V> valueType) {
+cache2k-api/src/main/java/org/cache2k/CacheEntry.java:  default @Nullable Throwable getException() {
+cache2k-api/src/main/java/org/cache2k/CacheEntry.java:  @Nullable LoadExceptionInfo<K> getExceptionInfo();
+cache2k-api/src/main/java/org/cache2k/ForwardingCache.java:  public @Nullable V get(K key) {
+cache2k-api/src/main/java/org/cache2k/ForwardingCache.java:  public @Nullable CacheEntry<K, V> getEntry(K key) {
+cache2k-api/src/main/java/org/cache2k/ForwardingCache.java:  public @Nullable V peek(K key) {
+cache2k-api/src/main/java/org/cache2k/ForwardingCache.java:  public @Nullable CacheEntry<K, V> peekEntry(K key) {
+cache2k-api/src/main/java/org/cache2k/ForwardingCache.java:  public @Nullable V peekAndRemove(K key) {
+cache2k-api/src/main/java/org/cache2k/ForwardingCache.java:  public @Nullable V peekAndPut(K key, V value) {
+cache2k-api/src/main/java/org/cache2k/KeyValueSource.java:  @Nullable V get(K key);
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable String name;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CacheType<K> keyType;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CacheType<V> valueType;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable Duration expireAfterWrite = null;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable Duration timerLag = null;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends Executor> loaderExecutor;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends Executor> refreshExecutor;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends Executor> asyncListenerExecutor;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends Executor> executor;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends ExpiryPolicy<K, V>> expiryPolicy;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends ResiliencePolicy<K, V>> resiliencePolicy;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends CacheLoader<K, V>> loader;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends CacheWriter<K, V>> writer;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends AdvancedCacheLoader<K, V>> advancedLoader;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends AsyncCacheLoader<K, V>> asyncLoader;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends ExceptionPropagator<K>> exceptionPropagator;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationSupplier<? extends Weigher<K, V>> weigher;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationCollection<CacheEntryOperationListener<K, V>> listeners;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable CustomizationCollection<CacheEntryOperationListener<K, V>> asyncListeners;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable Collection<CustomizationSupplier<CacheLifecycleListener>> lifecycleListeners;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable Set<Feature> features;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable SectionContainer sections;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable String getName() { return name; }
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setName(@Nullable String name) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CacheType<K> getKeyType() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setKeyType(@Nullable CacheType<K> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CacheType<V> getValueType() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setValueType(@Nullable CacheType<V> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable Duration getExpireAfterWrite() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setExpireAfterWrite(@Nullable Duration v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable Duration getTimerLag() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setTimerLag(@Nullable Duration v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends CacheLoader<K, V>> getLoader() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setLoader(@Nullable CustomizationSupplier<? extends CacheLoader<K, V>> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends AdvancedCacheLoader<K, V>> getAdvancedLoader() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setAdvancedLoader(@Nullable CustomizationSupplier<? extends AdvancedCacheLoader<K, V>> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends AsyncCacheLoader<K, V>> getAsyncLoader() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setAsyncLoader(@Nullable CustomizationSupplier<? extends AsyncCacheLoader<K, V>> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends ExpiryPolicy<K, V>> getExpiryPolicy() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setExpiryPolicy(@Nullable CustomizationSupplier<? extends ExpiryPolicy<K, V>> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends CacheWriter<K, V>> getWriter() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setWriter(@Nullable CustomizationSupplier<? extends CacheWriter<K, V>> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends ExceptionPropagator<K>> getExceptionPropagator() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setExceptionPropagator(@Nullable CustomizationSupplier<? extends ExceptionPropagator<K>> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends ResiliencePolicy<K, V>> getResiliencePolicy() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setResiliencePolicy(@Nullable CustomizationSupplier<? extends ResiliencePolicy<K, V>> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends Executor> getLoaderExecutor() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setLoaderExecutor(@Nullable CustomizationSupplier<? extends Executor> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends Executor> getRefreshExecutor() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setRefreshExecutor(@Nullable CustomizationSupplier<? extends Executor> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends Executor> getExecutor() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setExecutor(@Nullable CustomizationSupplier<? extends Executor> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends Executor> getAsyncListenerExecutor() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setAsyncListenerExecutor(@Nullable CustomizationSupplier<? extends Executor> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public @Nullable CustomizationSupplier<? extends Weigher<K, V>> getWeigher() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  public void setWeigher(@Nullable CustomizationSupplier<? extends Weigher<K, V>> v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kConfig.java:  private @Nullable Duration durationCheckAndSanitize(@Nullable Duration v) {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kManagerConfig.java:  private @Nullable String version = null;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kManagerConfig.java:  private @Nullable String defaultManagerName = null;
+cache2k-api/src/main/java/org/cache2k/config/Cache2kManagerConfig.java:  public @Nullable String getDefaultManagerName() {
+cache2k-api/src/main/java/org/cache2k/config/Cache2kManagerConfig.java:  public @Nullable String getVersion() {
+cache2k-api/src/main/java/org/cache2k/config/CacheType.java:  @Nullable Class<T> getType();
+cache2k-api/src/main/java/org/cache2k/config/CacheType.java:  @Nullable CacheType<?> getComponentType();
+cache2k-api/src/main/java/org/cache2k/config/CacheType.java:  @Nullable CacheType<?>[] getTypeArguments();
+cache2k-api/src/main/java/org/cache2k/config/CacheTypeCapture.java:  public @Nullable CacheType<?> getComponentType() {
+cache2k-api/src/main/java/org/cache2k/config/CacheTypeCapture.java:  public @Nullable Class<T> getType() {
+cache2k-api/src/main/java/org/cache2k/config/CacheTypeCapture.java:  public @Nullable CacheType<?>[] getTypeArguments() {
+cache2k-api/src/main/java/org/cache2k/config/CacheTypeCapture.java:    public @Nullable CacheType<?> getComponentType() {
+cache2k-api/src/main/java/org/cache2k/config/CacheTypeCapture.java:    @Nullable public Class<T> getType() {
+cache2k-api/src/main/java/org/cache2k/config/CacheTypeCapture.java:    public @Nullable CacheType<?>[] getTypeArguments() {
+cache2k-api/src/main/java/org/cache2k/config/CustomizationSupplierByClassName.java:  private @Nullable String className;
+cache2k-api/src/main/java/org/cache2k/config/CustomizationSupplierByClassName.java:  public @Nullable String getClassName() {
+cache2k-api/src/main/java/org/cache2k/config/ToggleFeature.java:  public static <T extends ToggleFeature> @Nullable T extract(Cache2kBuilder<?, ?> builder,
+cache2k-api/src/main/java/org/cache2k/expiry/ExpiryPolicy.java:  long calculateExpiryTime(K key, V value, long loadTime, @Nullable CacheEntry<K, V> currentEntry);
+cache2k-api/src/main/java/org/cache2k/integration/AdvancedCacheLoader.java:  public abstract V load(K key, long startTime, @Nullable CacheEntry<K, V> currentEntry) throws Exception;
+cache2k-api/src/main/java/org/cache2k/integration/LoadDetail.java:  public @Nullable LoadDetail<V> getNextInChain() {
+cache2k-api/src/main/java/org/cache2k/io/AdvancedCacheLoader.java:  V load(K key, long startTime, @Nullable CacheEntry<K, V> currentEntry) throws Exception;
+cache2k-api/src/main/java/org/cache2k/processor/EntryProcessor.java:  @Nullable R process(MutableCacheEntry<K, V> entry) throws Exception;
+cache2k-api/src/main/java/org/cache2k/processor/MutableCacheEntry.java:  @Nullable V getValue();
+cache2k-api/src/main/java/org/cache2k/processor/MutableCacheEntry.java:  @Nullable Throwable getException();
+cache2k-api/src/main/java/org/cache2k/processor/MutableCacheEntry.java:  @Nullable LoadExceptionInfo<K> getExceptionInfo();
+cache2k-core/src/main/java/org/cache2k/core/Entry.java:  public @Nullable TimerTask getTask() {
+cache2k-core/src/main/java/org/cache2k/core/Entry.java:  public <X> @Nullable X getPiggyBack(Class<X> type) {
+cache2k-core/src/main/java/org/cache2k/core/Entry.java:  public @Nullable EntryAction getEntryAction() {
+cache2k-core/src/test/java/org/cache2k/test/core/EntryProcessorCacheWrapper.java:  public @Nullable V peek(K key) {
+cache2k-jcache/src/main/java/org/cache2k/jcache/provider/JCacheJmxSupport.java:  public @Nullable CompletableFuture<Void> onCacheClosed(Cache cache) {
+cache2k-jcache/src/main/java/org/cache2k/jcache/provider/event/EventHandlingImpl.java:  public @Nullable CompletableFuture<Void> onCacheClosed(Cache cache) {
+cache2k-jmx/src/test/java/org/cache2k/extra/jmx/JmxSupportTest.java:  private @Nullable ObjectName objectName;
+cache2k-jmx/src/test/java/org/cache2k/extra/jmx/JmxSupportTest.java:  private void checkAttribute(String name, @Nullable Object expected) throws Exception {
+cache2k-spring/src/main/java/org/cache2k/extra/spring/SpringCache2kCache.java:  public @Nullable ValueWrapper get(Object key) {
+cache2k-testsuite/src/main/java/org/cache2k/testsuite/stress/AtomicOperationsPairwiseStressTest.java:    public @Nullable Integer actor1() {
+src/site/markdown/1/9.2.Alpha.md:- `@Nullable`, `@NonNull` annotations
+test-init/src/test/java/org/cache2k/core/CacheManagerInitTest.java:  public static final @Nullable String OTHER_DEFAULT_CACHE_MANAGER_NAME = "main";
