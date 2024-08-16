@@ -76,9 +76,9 @@
               -XepOpt:NullAway:AnnotatedPackages=org.cache2k
               -XepOpt:NullAway:UnannotatedSubPackages=org.cache2k.pinpoint,org.cache2k.core,org.cache2k.test,org.cache2k.jcache,org.cache2k.extra
               -XepOpt:NullAway:SerializeFixMetadata=true
-              -XepOpt:NullAway:FixSerializationConfigPath=/Users/nima/Desktop/cache2k/annotator-out/checker.xml
+              -XepOpt:NullAway:FixSerializationConfigPath=/home/nima/Developer/nullness-benchmarks/cache2k/annotator-out/checker.xml
               -Xep:AnnotatorScanner:ERROR
-              -XepOpt:AnnotatorScanner:ConfigPath=/Users/nima/Desktop/cache2k/annotator-out/scanner.xml
+              -XepOpt:AnnotatorScanner:ConfigPath=/home/nima/Developer/nullness-benchmarks/cache2k/annotator-out/scanner.xml
               -Xep:AnnotLocator:ERROR
             </arg>
           </compilerArgs>
@@ -108,45 +108,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <!-- <profiles>
-    <profile>
-      <id>NullAway</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-              <compilerArgs>
-                <arg>-XDcompilePolicy=simple</arg>
-                <arg>
-                  -Xplugin:ErrorProne 
-                  -Xep:NullAway:ERROR
-                  -XepOpt:NullAway:AnnotatedPackages=org.cache2k
-  -XepOpt:NullAway:UnannotatedSubPackages=org.cache2k.pinpoint,org.cache2k.core,org.cache2k.test,org.cache2k.jcache,org.cache2k.extra
-                  -XepOpt:NullAway:SerializeFixMetadata=true
-  -XepOpt:NullAway:FixSerializationConfigPath=/home/nima/Developer/nullness-benchmarks/caffeine/annotator-out/checker.xml
-                  -Xep:AnnotatorScanner:ERROR
-  -XepOpt:AnnotatorScanner:ConfigPath=/home/nima/Developer/nullness-benchmarks/caffeine/annotator-out/scanner.xml
-                </arg>
-              </compilerArgs>
-              <annotationProcessorPaths>
-                <path>
-                  <groupId>com.google.errorprone</groupId>
-                  <artifactId>error_prone_core</artifactId>
-                  <version>2.29.0</version>
-                </path>
-                <path>
-                  <groupId>com.uber.nullaway</groupId>
-                  <artifactId>nullaway</artifactId>
-                  <version>0.10.20</version>
-                </path>
-              </annotationProcessorPaths>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles> -->
 </project>
