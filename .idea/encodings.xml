@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/build-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-addon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-addon/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-java11-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-java11-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-jcache-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-jcache-tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-jcache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-jcache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-jmx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-jmx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-micrometer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-micrometer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-pinpoint/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-pinpoint/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-schema/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-schema/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-testing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-testing/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-testsuite/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache2k-testsuite/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/documentation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/documentation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-init/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-init/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-kotlin/src/main/kotlin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-kotlin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-parent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-parent/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

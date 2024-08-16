@@ -61,6 +61,37 @@
         </configuration>
       </plugin>
 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>11</source>
+          <target>11</target>
+          <encoding>UTF-8</encoding>
+          <compilerArgs>
+            <arg>-XDcompilePolicy=simple</arg>
+            <arg>-Xplugin:ErrorProne
+              -Xep:NullAway:ERROR
+              -XepOpt:NullAway:AnnotatedPackages=org.cache2k
+              -XepOpt:NullAway:UnannotatedSubPackages=org.cache2k.pinpoint,org.cache2k.core,org.cache2k.test,org.cache2k.jcache,org.cache2k.extra
+            </arg>
+          </compilerArgs>
+          <annotationProcessorPaths>
+            <path>
+              <groupId>com.google.errorprone</groupId>
+              <artifactId>error_prone_core</artifactId>
+              <version>2.23.0</version>
+            </path>
+            <path>
+              <groupId>com.uber.nullaway</groupId>
+              <artifactId>nullaway</artifactId>
+              <version>0.10.15</version>
+            </path>
+          </annotationProcessorPaths>
+        </configuration>
+      </plugin>
+
       <!-- add OSGi bundle information. does not work yet.
            https://github.com/cache2k/cache2k/issues/83
       <plugin>
@@ -144,6 +175,40 @@
         <version>3.7.1</version>
       </dependency>
     </dependencies>
+  </profile>
+
+  <profile>
+    <id>NullAway</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <compilerArgs>
+              <arg>-XDcompilePolicy=simple</arg>
+              <arg>-Xplugin:ErrorProne -Xep:NullAway:ERROR
+                -XepOpt:NullAway:AnnotatedPackages=org.cache2k
+                -XepOpt:NullAway:UnannotatedSubPackages=org.cache2k.pinpoint,org.cache2k.core,org.cache2k.test,org.cache2k.jcache,org.cache2k.extra
+              </arg>
+            </compilerArgs>
+            <annotationProcessorPaths>
+              <path>
+                <groupId>com.google.errorprone</groupId>
+                <artifactId>error_prone_core</artifactId>
+                <version>2.4.0</version>
+              </path>
+              <!-- https://github.com/uber/NullAway/wiki/Configuration#maven -->
+              <path>
+                <groupId>com.uber.nullaway</groupId>
+                <artifactId>nullaway</artifactId>
+                <version>0.8.0</version>
+              </path>
+            </annotationProcessorPaths>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
   </profile>
 
 </profiles>
